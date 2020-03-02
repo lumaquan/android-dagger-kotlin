@@ -18,10 +18,9 @@ package com.example.android.dagger.settings
 
 import com.example.android.dagger.user.UserDataRepository
 import com.example.android.dagger.user.UserManager
+import javax.inject.Inject
 
-/**
- * SettingsViewModel is the ViewModel that [SettingsActivity] uses to handle complex logic.
- */
+
 class SettingsViewModel(
     private val userDataRepository: UserDataRepository,
     private val userManager: UserManager

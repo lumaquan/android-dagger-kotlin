@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.android.dagger.MyApplication
 import com.example.android.dagger.R
 import com.example.android.dagger.login.LoginActivity
+import javax.inject.Inject
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -35,6 +36,7 @@ class SettingsActivity : AppCompatActivity() {
         val userManager = (application as MyApplication).userManager
 
         settingsViewModel = SettingsViewModel(userManager.userDataRepository!!, userManager)
+
         setupViews()
     }
 

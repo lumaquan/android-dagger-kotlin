@@ -1,4 +1,4 @@
-/*
+    /*
  * Copyright (C) 2019 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,8 +17,9 @@
 package com.example.android.dagger.storage
 
 import android.content.Context
+import javax.inject.Inject
 
-class SharedPreferencesStorage(context: Context) : Storage {
+class SharedPreferencesStorage @Inject constructor(context: Context) : Storage {
 
     private val sharedPreferences = context.getSharedPreferences("Dagger", Context.MODE_PRIVATE)
 
